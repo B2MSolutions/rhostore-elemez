@@ -1,0 +1,38 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Search</h1>
+    <a href="<%= Rho::RhoConfig.start_path %>" class="ui-btn-left" data-icon="home" data-direction="reverse"
+       <%= "data-ajax='false'" if is_bb6 %>>Home</a>
+    <a href="<%= url_for :action => :new %>" class="ui-btn-right" data-icon="plus">New</a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for(:action => :search) %>">
+      <div data-role="fieldcontain">
+        <label for="query" class="fieldLabel">Query</label>
+        <input type="text" id="query" name="query" <%= placeholder( "Query" ) %>/>
+      </div>
+      <input type="submit" value="Search"/>
+    </form>
+
+    <div>
+      <%= "Found #{@customers.length} customer(s)." %>
+    </div>
+
+    <% if !@customers.empty? %>
+        <ul data-role="listview">
+          <% @customers.each do |customer| %>
+
+              <li>
+                <a href="<%= url_for :action => :show, :id => customer.object %>">
+                  <%= customer.first %> <%= customer.last %>
+                </a>
+              </li>
+
+          <% end %>
+        </ul>
+    <% end %>
+  </div>
+
+</div>

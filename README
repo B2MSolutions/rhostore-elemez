@@ -1,0 +1,21 @@
+-------------------
+Rhostore
+a simple example application used to demonstrate and test sync
+--------------------
+
+Install rhodes: http://docs.rhomobile.com/rhodes/introduction
+
+Install rhoconnect: http://docs.rhomobile.com/rhoconnect/introduction
+
+Download and run store-server: http://github.com/rhomobile/store-server
+
+Now, edit the rhoconfig.txt file in this application. Set "syncserver" to the correct IP address for your running store-server. In the example below, the store-server is running at 192.168.1.220 on port 9292.
+
+syncserver = 'http://192.168.1.220:9292/application/'
+
+This application syncs data with http://rhostore.heroku.com. To keep things simple, you do not need a login to access that site. 
+
+To build this application, for example, on BlackBerry type: rake run:bb, or rake run:iphone for iPhone.
+
+Launch the application and click on Login from the main page. You can also access the Login screen from Settings -> Options.
+

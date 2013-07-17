@@ -1,0 +1,36 @@
+#sdk: c:/projects/rhodes
+sdk: ../rhodes
+
+sdkversion: 3.2.0
+name: store
+version: 1.0
+vendor: rhomobile
+build: debug
+applog: rholog.txt
+bbver: 6.0
+
+wm:
+  #sdk: "MC3000c50b (ARMV4I)"
+
+iphone:
+  configuration: Debug
+  sdk: iphonesimulator6.0
+  emulator: 4.0.1
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+
+extensions: ["json", "rhoconnect-client"] 
+
+android:
+  version: 2.2
+  emulator: android-2.2
+
+wp:
+  productid: '1aa73f88-4d47-4f94-acdd-ab9301d45a2a'
+
+symbian:
+  uid: '0xea92ef73'
+
+#bb:
+#  ignore_bb6_suffix: 1
