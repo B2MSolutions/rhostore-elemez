@@ -18,6 +18,7 @@ iphone:
 extensions:
 - json
 - rhoconnect-client
+- elemez
 android:
   version: 2.2
   emulator: android-2.2
@@ -25,3 +26,4 @@ wp:
   productid: 1aa73f88-4d47-4f94-acdd-ab9301d45a2a
 symbian:
   uid: '0xea92ef73'
+

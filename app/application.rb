@@ -1,4 +1,5 @@
 require 'rho/rhoapplication'
+require 'elemez'
 
 class AppApplication < Rho::RhoApplication
   def initialize
@@ -8,6 +9,7 @@ class AppApplication < Rho::RhoApplication
     @@tabbar = nil
 
     super
+    Elemez::API::instrument("RhoStore")
 
     SyncEngine::set_objectnotify_url("/app/Settings/sync_object_notify")
     

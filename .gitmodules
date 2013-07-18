@@ -1,0 +1,3 @@
+[submodule "extensions/elemez"]
+	path = extensions/elemez
+	url = git@github.com:B2MSolutions/rhodes-elemez.git

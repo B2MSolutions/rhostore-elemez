@@ -3,6 +3,8 @@ Rhostore
 a simple example application used to demonstrate and test sync
 --------------------
 
+This fork uses the [rhodes-elemez](https://github.com/B2MSolutions/rhodes-elemez) native extension to instrument the rhostore application against elemez.
+
 Install rhodes: http://docs.rhomobile.com/rhodes/introduction
 
 Install rhoconnect: http://docs.rhomobile.com/rhoconnect/introduction
